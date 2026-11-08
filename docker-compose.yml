@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  transport-service:
+    build: .
+    container_name: transport-container
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
